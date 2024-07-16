@@ -32,6 +32,10 @@ import thetalogo from "./thetalogo.png";
 import theta from "./theta.svg";
 import walletconnect from "./walletconnect.png";
 import phrase from "./phrase.png";
+import tfuel from "./tfuel.png";
+import tfuel1 from "./tfuel1.svg";
+import thetad from "./thetad.png";
+import tfuel3 from "./tfuel3.png";
 
 export {
   airbnb,
@@ -66,4 +70,9 @@ export {
   people01,
   people02,
   people03,
+  tfuel,
+  tfuel1,
+  theta,
+  thetad,
+  tfuel3
 };

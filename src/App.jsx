@@ -7,6 +7,9 @@ import { Navbar, Subscribe,
   Finance,
   Connect,
   Comments,
+  Theta,
+  Try,
+  Footer,
   Chess } from "./components";
   import Typewriter from "typewriter-effect";
 
@@ -31,11 +34,13 @@ const App = () => (
           <Business />
           <Finance />
           <Connect />
-          
           <Comments />
-          <Feedback />
+          <Theta />
+          <Try />
+          <Footer />
+          {/* <Feedback /> */}
           {/* <GetStarted /> */}
-          <Subscribe />
+          {/* <Subscribe /> */}
         </div>
       </div>
     </div>

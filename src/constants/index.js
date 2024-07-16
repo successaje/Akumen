@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, pawn, livechannel, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, theta, instagram, linkedin, twitter, airbnb, tfuel3, thetad, binance, pawn, livechannel, coinbase, dropbox, tfuel, tfuel1, send, shield, star  } from "../assets";
 
 export const navLinks = [
   {
@@ -53,15 +53,15 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
+      "Akumen has completely transformed the way I play and connect with friends online. It's intuitive and fun!",
+    name: "Success Finisher",
     title: "Founder & Leader",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      "The social features are amazing. I've met so many new friends through this platform.",
     name: "Steve Mark",
     title: "Founder & Leader",
     img: people02,
@@ -69,7 +69,15 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
+      "A great way to enjoy board games and keep up with friends. Highly recommend it!",
+    name: "Kenn Gallagher",
+    title: "Founder & Leader",
+    img: people03,
+  },
+  {
+    id: "feedback-4",
+    content:
+      "Love the seamless integration of social features and gaming. Akumen is a game-changer!",
     name: "Kenn Gallagher",
     title: "Founder & Leader",
     img: people03,
@@ -191,18 +199,30 @@ export const socialMedia = [
 export const clients = [
   {
     id: "client-1",
-    logo: airbnb,
+    logo: tfuel3,
   },
   {
     id: "client-2",
-    logo: binance,
+    logo: thetad,
   },
   {
     id: "client-3",
-    logo: coinbase,
+    logo: tfuel3,
   },
   {
     id: "client-4",
-    logo: dropbox,
+    logo: thetad,
+  },
+  {
+    id: "client-4",
+    logo: thetad,
+  },
+  {
+    id: "client-5",
+    logo: tfuel3,
+  },
+  {
+    id: "client-6",
+    logo: thetad,
   },
 ];

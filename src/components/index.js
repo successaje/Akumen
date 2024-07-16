@@ -9,8 +9,10 @@ import Stats from "./Stats";
 import Business from "./Business";
 import Finance from "./Finance";
 import Connect from "./Connect";
+import Theta from "./Theta";
+import Try from "./Try";
+import Footer from "./Footer";
 import { color } from "framer-motion";
-
 
 
 export {
@@ -24,5 +26,8 @@ export {
     Business,
     Stats,
     Finance,
-    Connect
+    Connect,
+    Theta,
+    Try,
+    Footer
 }
