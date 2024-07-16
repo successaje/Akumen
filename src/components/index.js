@@ -12,7 +12,10 @@ import Connect from "./Connect";
 import Theta from "./Theta";
 import Try from "./Try";
 import Footer from "./Footer";
-import { color } from "framer-motion";
+import WalletModal from "./WalletModal";
+// import Home from "./Home";
+// import ChessGame from "./ChessGame";
+// import { color } from "framer-motion";
 
 
 export {
@@ -29,5 +32,8 @@ export {
     Connect,
     Theta,
     Try,
-    Footer
+    Footer,
+    WalletModal,
+    // Home ,
+    // ChessGame
 }

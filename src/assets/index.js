@@ -36,6 +36,8 @@ import tfuel from "./tfuel.png";
 import tfuel1 from "./tfuel1.svg";
 import thetad from "./thetad.png";
 import tfuel3 from "./tfuel3.png";
+import b_b from "./chess/b_b.png";
+
 
 export {
   airbnb,

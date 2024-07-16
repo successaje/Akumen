@@ -214,15 +214,15 @@ export const clients = [
     logo: thetad,
   },
   {
-    id: "client-4",
-    logo: thetad,
-  },
-  {
     id: "client-5",
     logo: tfuel3,
   },
   {
     id: "client-6",
     logo: thetad,
+  },
+  {
+    id: "client-7",
+    logo: tfuel3,
   },
 ];

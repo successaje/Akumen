@@ -3,32 +3,14 @@ import { chess, robot } from "../assets";
 import Typewriter from "typewriter-effect";
 // import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect"
 import GetStarted from "./GetStarted";
+import React from "react";
+// import { Link } from "react-router-dom";
 
 
 // Text Generate
 
-const Chess = () => {
-  const words = [
-    {
-      text: "Play",
-    },
-    {
-      text: "awesome",
-    },
-    {
-      text: "board",
-    },
-    {
-      text: "games",
-    },
-    {
-      text: "on",
-    },
-    {
-      text: "Akumen.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
+const Chess = ({ openWalletModal }) => {
+  
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
@@ -63,11 +45,13 @@ const Chess = () => {
         </div>
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
-          <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
-            Play now
-          </button>
-          <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
-            Signup
+          {/* <Link to="/chess"> */}
+            <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+              Play now
+            </button>
+          {/* </Link> */}
+          <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm" onClick={openWalletModal}>
+            Connect Wallet
           </button>
         </div>
       
