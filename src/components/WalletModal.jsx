@@ -1,7 +1,7 @@
 // WalletModal.jsx
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import { ethers } from 'ethers';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { ethers } from "ethers";
 
 const ModalBackground = styled.div`
   position: fixed;
@@ -11,8 +11,9 @@ const ModalBackground = styled.div`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content : center;
+  justify-content: center;
   align-items: center;
+  z-index: 100;
 `;
 
 const ModalContainer = styled.div`
@@ -38,40 +39,40 @@ const WalletButton = styled.button`
 `;
 
 const WalletModal = ({ onClose }) => {
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
-
-    const connectWallet = async () => {
-        if (window.ethereum) {
-        try {
-            await window.ethereum.request({ method: 'eth_requestAccounts' });
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            const signer = provider.getSigner();
-            const address = await signer.getAddress();
-            console.log('Connected address:', address);
-            onClose(); // Close the modal after successful connection
-            
-        } catch (err) {
-            console.error(err);
-            setError('Failed to connect wallet. Please try again.');
-        }
-        } else {
-            console.error("MetaMask is not installed. Please install it to use this feature.")
-            setError('MetaMask is not installed. Please install it to use this feature.');
-        }
-    };
-
+  const connectWallet = async () => {
+    if (window.ethereum) {
+      try {
+        await window.ethereum.request({ method: "eth_requestAccounts" });
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+        const address = await signer.getAddress();
+        console.log("Connected address:", address);
+        onClose(); // Close the modal after successful connection
+      } catch (err) {
+        console.error(err);
+        setError("Failed to connect wallet. Please try again.");
+      }
+    } else {
+      console.error(
+        "MetaMask is not installed. Please install it to use this feature."
+      );
+      setError(
+        "MetaMask is not installed. Please install it to use this feature."
+      );
+    }
+  };
 
   return (
     <ModalBackground>
       <ModalContainer>
         <h2>Connect Your Wallet</h2>
         <WalletButton onClick={connectWallet}>Connect MetaMask</WalletButton>
-        {error && <p style={{ color: 'red' }}>{error}</p>}
+        {error && <p style={{ color: "red" }}>{error}</p>}
         <WalletButton onClick={onClose}>Close</WalletButton>
       </ModalContainer>
     </ModalBackground>
-
   );
 };
 

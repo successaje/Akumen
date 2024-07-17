@@ -1,5 +1,7 @@
 import styles from "./style";
-import { Navbar, Subscribe,
+import {
+  Navbar,
+  Subscribe,
   Stats,
   Game,
   Business,
@@ -14,45 +16,40 @@ import { Navbar, Subscribe,
   // Home,
   // ChessGame,
   // Board,
-  Chess } from "./components";
-  // import { gameSubject, initGame, resetGame } from './components/ChessGame/Game'
-  import "./App.css";
-  // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+  Chess,
+} from "./components";
+// import { gameSubject, initGame, resetGame } from './components/ChessGame/Game'
+import "./App.css";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-
-  import Typewriter from "typewriter-effect";
-  import React, { useState } from "react";
+import Typewriter from "typewriter-effect";
+import React, { useState } from "react";
 
 const App = () => {
-
   const [isModalOpen, setModalOpen] = useState(false);
 
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
 
-
-
   return (
-  
     <div className="bg-primary w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           {/* <Router> */}
-            <Navbar />
-            {/* <switch>
+          <Navbar />
+          {/* <switch>
               <Route path="/" exact component={Home} />
               <Route path="/chess" component={ChessGame} />
             </switch>
           </Router> */}
-          
-        </div> 
+        </div>
       </div>
 
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-        {/* <button onClick={handleWalletModalOpen}>Open Wallet</button>
+          {/* <button onClick={handleWalletModalOpen}>Open Wallet</button>
         {isWalletModalOpen && <WalletModal onClose={handleWalletModalClose} />} */}
-          <Chess  openWalletModal={openModal}/>
+          <Chess openWalletModal={openModal} />
         </div>
       </div>
 
@@ -73,7 +70,7 @@ const App = () => {
       </div>
       {isModalOpen && <WalletModal onClose={closeModal} />}
     </div>
-)
+  );
 };
 
-export default App
+export default App;
