@@ -16,11 +16,11 @@ import {
   // Home,
   // ChessGame,
   // Board,
-  Chess,
-} from "./components";
-// import { gameSubject, initGame, resetGame } from './components/ChessGame/Game'
-import "./App.css";
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+  Chess } from "./components";
+  // import { gameSubject, initGame, resetGame } from './components/ChessGame/Game'
+  // import "./App.css";
+  // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 
 import Typewriter from "typewriter-effect";
 import React, { useState } from "react";
