@@ -1,0 +1,16 @@
+=============== Jul 9, 2024 (WAT) ===============
+20:24:23.281530 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:24:24.092630 db@open opening
+20:24:24.098833 version@stat F·[] S·0B[] Sc·[]
+20:24:24.117748 db@janitor F·2 G·0
+20:24:24.118483 db@open done T·25.810711ms
+=============== Jul 10, 2024 (WAT) ===============
+00:14:29.525585 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:14:29.527455 version@stat F·[] S·0B[] Sc·[]
+00:14:29.527486 db@open opening
+00:14:29.527999 journal@recovery F·1
+00:14:29.531043 journal@recovery recovering @1
+00:14:30.621743 memdb@flush created L0@2 N·101758 S·15MiB "\x00\x04\xcd..\xcf?\xc4,v93434":"\xff\xfa\xb9..i\xa9(,v16294"
+00:14:30.625973 version@stat F·[1] S·15MiB[15MiB] Sc·[0.25]
+00:14:31.576985 db@janitor F·3 G·0
+00:14:31.577129 db@open done T·2.049628215s
