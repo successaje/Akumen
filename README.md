@@ -74,5 +74,5 @@ The growing interest in online board games and the need for immersive, interacti
 ## Contributing
 We welcome contributions from the community! If you'd like to contribute, please fork the repository and create a pull request.
 
-Contact
+## Contact
 For any inquiries, please contact us at successaje7@gmail.com.
