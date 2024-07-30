@@ -18,7 +18,7 @@ const Connect = () => (
     </div>
 
     <div className={layout.sectionImg}>
-      <img src={card} alt="billing" className="w-[100%] h-[100%]" />
+      <img src={card} alt="billing" className="w-[80%] h-[100%]" />
     </div>
   </section>
 )
